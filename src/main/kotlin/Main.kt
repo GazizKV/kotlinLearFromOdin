@@ -15,4 +15,11 @@ fun main(args: Array<String>) {
     a = secondVar.also { secondVar = a }
     print("a = $a and secondVar = $secondVar");
 
+    val b: Int = 10000
+    println(b == b)
+    val boxedB: Int? = b
+    val anotherBoxedB: Int? = b
+    println(boxedB == anotherBoxedB)
+    println(boxedB === anotherBoxedB)
+
 }
